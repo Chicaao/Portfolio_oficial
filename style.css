@@ -118,6 +118,11 @@ section{
     transition: color 0.3s ease;
 }
 
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+}
+
 .navbar .logo h1:hover{
     color: var(--secondary-color);
     cursor: pointer;
