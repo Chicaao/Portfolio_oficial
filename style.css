@@ -420,6 +420,10 @@ section{
         font-size: 0.95rem;
     }
 
+    .navbar .logo-link:hover .logo-img {
+        transform: scale(1.1);
+    }
+
     .hero-content h1 {
         font-size: 2.5rem;
     }
