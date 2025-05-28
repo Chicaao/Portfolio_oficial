@@ -142,6 +142,88 @@ section{
     padding-top: 6rem;
 }
 
+.skills-section h2, .project-section h2, .contact-section h2, .about-section h2 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.skill-item {
+    background-color: var(--background-dark);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+}
+
+.skill-item:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.skill-item i {
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.skill-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    color: var(--text-light);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.project-card {
+    background-color: var(--background-dark);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 250px;
+}
+
+.project-card:hover:not(.locked) {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.project-card.locked {
+    filter: grayscale(80%);
+    opacity: 0.7;
+    cursor: not-allowed;
+    border: 2px dashed var(--secondary-color);
+}
+
+.project-card p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+}
+
 .hero-content {
     max-width: 800px;
     padding: 2rem;
