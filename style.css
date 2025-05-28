@@ -127,7 +127,6 @@ section{
     height: 40px;
     margin-right: 10px;
     transition: transform 0.3s ease;
-    vertical-align: middle;
 }
 
 .navbar .logo-link:hover .logo-img {
@@ -139,6 +138,7 @@ section{
     font-size: 1.8rem;
     color: inherit;
     font-weight: 700;
+    line-height: 1;
 }
 
 .logo-link {
@@ -393,7 +393,6 @@ section{
     .navbar .logo-img {
         height: 30px;
         margin-right: 8px;
-        vertical-align: middle;
     }
 
     .navbar .logo-link {
@@ -402,7 +401,9 @@ section{
     }
     
     .navbar .logo h1 {
-        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        margin: 0;
+        line-height: 1;
     }
 
     .nav-links {
