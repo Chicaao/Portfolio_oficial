@@ -437,7 +437,7 @@ section{
 
     .nav-links {
         flex-direction: column;
-        background-color: var(--card-background);
+        background-color: var(--background-dark);
         position: absolute;
         top: 60px;
         left: 0;
