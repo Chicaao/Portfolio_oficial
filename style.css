@@ -278,7 +278,7 @@ section{
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -297,6 +297,15 @@ section{
     opacity: 0.7;
     cursor: not-allowed;
     border: 2px dashed var(--secondary-color);
+    transform-origin: bottom right;
+}
+
+.project-card.locked:hover {
+    transform: rotateZ(3deg) translateY(-5px) translateX(-5px) scale(1.02);
+    filter: grayscale(50%);
+    opacity: 0.8;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5),
+                -5px -5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .project-card p {
