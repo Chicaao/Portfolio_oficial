@@ -301,7 +301,7 @@ section{
 }
 
 .project-card.locked:hover {
-    transform: rotateZ(3deg) translateY(-5px) translateX(-5px) scale(1.02);
+    transform: rotateZ(10deg) translateY(-15px) translateX(-15px) scale(1.02);
     filter: grayscale(50%);
     opacity: 0.8;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5),
