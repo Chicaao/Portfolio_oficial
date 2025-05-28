@@ -111,22 +111,38 @@ section{
     margin: 0 auto;
 }
 
-.navbar .logo h1 {
-    margin: 0;
-    font-size: 1.8rem;
+.navbar .logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
     color: var(--primary-color);
     transition: color 0.3s ease;
-    justify-content: center;
+}
+
+.navbar .logo-link:hover {
+    color: var(--secondary-color);
+}
+
+.navbar .logo-img {
+    height: 40px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.navbar .logo-link:hover .logo-img {
+    transform: scale(1.1);
+}
+
+.navbar .logo-link h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: inherit;
+    font-weight: 700;
 }
 
 .logo-link {
     text-decoration: none;
     color: inherit;
-}
-
-.navbar .logo h1:hover{
-    color: var(--secondary-color);
-    cursor: pointer;
 }
 
 .nav-links {
