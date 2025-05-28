@@ -115,6 +115,12 @@ section{
     margin: 0;
     font-size: 1.8rem;
     color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+.navbar .logo h1:hover{
+    color: var(--secondary-color);
+    cursor: pointer;
 }
 
 .nav-links {
@@ -122,8 +128,14 @@ section{
     gap: 1.5rem;
 }
 
-.nav-links li a:hover {
+.nav-links li a {
     color: var(--secondary-color);
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: var(--primary-color);
 }
 
 .hero-section {
