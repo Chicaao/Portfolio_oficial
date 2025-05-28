@@ -393,6 +393,7 @@ section{
     .navbar .logo-img {
         height: 30px;
         margin-right: 8px;
+        vertical-align: middle;
     }
 
     .navbar .logo-link {
