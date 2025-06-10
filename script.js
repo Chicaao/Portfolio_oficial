@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: 1200,
             easing: 'cubic-bezier(.25, .46, .45, .94)',
             origin: 'bottom',
-            reset: false
+            reset: true
         });
 
         // Aplicando animações a elementos especificos
