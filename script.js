@@ -33,4 +33,25 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // NOVO: Lógica para o Botão Voltar ao Topo
+    const backToTopButton = document.getElementById('backToTopBtn')
+
+    // Ação ao rolar a página
+    window.addEventListener('scroll', () => {
+        // Mostra o botão se a rolagem for maior que 200px (ajuste conforme a necessidade) 
+        if (window.scrollY > 200) {
+            backToTopButton.classList.add('show');
+        } else {
+            backToTopButton.classList.remove('show');
+        }
+    });
+    if (backToTopButton) {
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
 });
