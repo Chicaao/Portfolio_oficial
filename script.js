@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
 
             // Pega o ID da seção do atributo href (ex: "#about" -> "about")
-            const targetId = this.getAttribute('href').substring('');
+            const targetId = this.getAttribute('href').substring(1);
             const targetElement = document.getElementById(targetId);
 
             if (targetElement) {
